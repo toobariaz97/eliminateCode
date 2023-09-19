@@ -1,0 +1,26 @@
+{
+  "name": "eliminatecode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+        "prebuild": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js .\"danelle-blocker\" .\"Output\"",
+    "transpile": "babel index.js --out-dir dist-server"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "dependencies": {
+    "@babel/cli": "^7.22.15",
+    "@babel/core": "^7.22.20",
+    "@babel/preset-env": "^7.22.20",
+    "acorn": "^8.10.0",
+    "escodegen": "^2.1.0",
+    "fs-extra": "^11.1.1",
+    "glob": "^10.3.4",
+    "nodemon": "^3.0.1",
+    "rimraf": "^5.0.1"
+  }
+}
